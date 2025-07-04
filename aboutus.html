@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us page - Formula 1</title>
+    <link rel="icon" href="images/F1-Logo.jpg">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/aboutstyle.css">
     <link rel="stylesheet" href="races.html">
-    <link rel="stylesheet" href="aboutus.html">
+    <link rel="stylesheet" href="index.html">
     <link rel="stylesheet" href="signin.html">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,10 +19,10 @@
             <a href="index.html"><img class="logo_img" src="images/F1-Logo.jpg" alt=""></a>
             <ul class="nav_ul">
                 <li class="nav_li"><a href="index.html">Home</a></li>
-                <li class="nav_li"><a href="">Races</a></li>
-                <li class="nav_li"><a href="">About Us</a></li>
+                <li class="nav_li"><a href="races.html">Races</a></li>
+                <li class="nav_li"><a href="aboutus.html">About Us</a></li>
             </ul>
-            <a class="sign_in" href="">Sign In</a>
+            <a class="sign_in" href="signin.html">Sign In</a>
         </nav>
     </header>
 
@@ -56,8 +57,24 @@
     
       </section>
     
-      <footer>
-        <p>&copy; 2025 F1 FanPage. All rights reserved.</p>
+      <footer class="footer">
+        <div class="footer-left">
+          <h1>Formula 1</h1>
+          <p>The pinnacle of motorsport, featuring the fastest cars and elite drivers.</p>
+        </div>
+      
+        <div class="footer-center">
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="races.html">Races</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+          </ul>
+        </div>
+      
+        <div class="footer-right">
+          <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to Top</button>
+        </div>
       </footer>
     
 </body>

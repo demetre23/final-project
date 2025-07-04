@@ -1,136 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formula 1</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="races.html">
-    <link rel="stylesheet" href="aboutus.html">
-    <link rel="stylesheet" href="signin.html">
-</head>
-<body>
+    <link rel="icon" href="images/F1-Logo.jpg" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="races.html" />
+    <link rel="stylesheet" href="aboutus.html" />
+    <link rel="stylesheet" href="signin.html" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="cookie-notice">
+      <p>
+        This website uses cookies to ensure you get the best experience.
+      </p>
+      <button id="accept-cookies">Accept</button>
+    </div>
+
     <header>
-        <nav class="header_nav">
-            <a href="index.html"><img class="logo_img" src="images/F1-Logo.jpg" alt=""></a>
-            <ul class="nav_ul">
-                <li class="nav_li"><a href="index.html">Home</a></li>
-                <li class="nav_li"><a href="">Races</a></li>
-                <li class="nav_li"><a href="aboutus.html">About Us</a></li>
-            </ul>
-            <a class="sign_in" href="">Sign In</a>
-        </nav>
+      <nav class="header_nav">
+        <a href="index.html"
+          ><img class="logo_img" src="images/F1-Logo.jpg" alt=""
+        /></a>
+        <ul class="nav_ul">
+          <li class="nav_li"><a href="index.html">Home</a></li>
+          <li class="nav_li"><a href="races.html">Races</a></li>
+          <li class="nav_li"><a href="aboutus.html">About Us</a></li>
+        </ul>
+        <a class="sign_in" href="signin.html">Sign In</a>
+      </nav>
     </header>
 
-  <section class="news">
+    <section class="news">
+      <div class="slider">
+        <!-- Radio Inputs -->
+        <input type="radio" name="slide" id="slide1" checked />
+        <input type="radio" name="slide" id="slide2" />
+        <input type="radio" name="slide" id="slide3" />
 
-  <div class="slider">
+        <!-- Slides -->
+        <div class="slides">
+          <div class="slide s1">
+            <img
+              src="images/F1_WBDO_FEATURED_IMAGE_MAIN_1920x1080-1.webp"
+              alt="F1 movie trailer"
+            />
+            <div class="caption">
+              <a
+                href="https://www.youtube.com/watch?v=CT2_P2DZBR0"
+                target="_blank"
+                >F1 movie unveiled to the world</a
+              >
+            </div>
+          </div>
 
-    <!-- Radio Inputs -->
-    <input type="radio" name="slide" id="slide1" checked />
-    <input type="radio" name="slide" id="slide2" />
-    <input type="radio" name="slide" id="slide3" />
+          <div class="slide s2">
+            <img
+              src="images/6fb63c20-54f5-11f0-a063-0547e47ae66c.jpg"
+              alt="Norris Austria win"
+            />
+            <div class="caption">
+              <a
+                href="https://www.bbc.com/sport/formula1/articles/c9qx0eyjqxpo"
+                target="_blank"
+                >Norris fights off Piastri for Austria win</a
+              >
+            </div>
+          </div>
 
-    <!-- Slides -->
-    <div class="slides">
-      <div class="slide s1">
-        <img src="images/F1_WBDO_FEATURED_IMAGE_MAIN_1920x1080-1.webp" alt="F1 movie trailer"/>
-        <div class="caption"><a href="https://www.youtube.com/watch?v=CT2_P2DZBR0" target="_blank">F1 movie trailer unveiled to the world</a></div>
+          <div class="slide s3">
+            <img
+              src="images/racefansdotnet-7440480_HiRes.jpg"
+              alt="Silverstone preview"
+            />
+            <div class="caption">
+              <a
+                href="https://www.espn.com/f1/story/_/id/45642234/2025-british-grand-prix-f1-preview-s-predictions-stats"
+                target="_blank"
+                >What should we expect from Silverstone</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <div class="nav">
+          <label for="slide3" class="prev">&#10094;</label>
+          <label for="slide2" class="next">&#10095;</label>
+
+          <label for="slide1" class="prev second">&#10094;</label>
+          <label for="slide3" class="next second">&#10095;</label>
+
+          <label for="slide2" class="prev third">&#10094;</label>
+          <label for="slide1" class="next third">&#10095;</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="teams_drivers_section">
+      <div class="main-container">
+        <a href="https://www.redbullracing.com/int-en" class="team">
+          <img src="images/redbull.jfif" alt="Red Bull" />
+          <p>Red Bull</p>
+        </a>
+        <a href="https://www.ferrari.com/en-EN/formula1" class="team">
+          <img src="images/ferari.webp" alt="Scuderia Ferrari" />
+          <p>Scuderia Ferrari</p>
+        </a>
+        <a href="https://www.mercedesamgf1.com/" class="team">
+          <img src="images/mercedes.webp" alt="Mercedes-AMG Petronas" />
+          <p>Mercedes-AMG Petronas</p>
+        </a>
+        <a href="https://www.mclaren.com/racing/formula-1/" class="team">
+          <img src="images/mclaren.avif" alt="McLaren" />
+          <p>McLaren</p>
+        </a>
+        <a
+          href="https://www.williamsf1.com/?srsltid=AfmBOoqhIOpxDFFlFgSQl62brueWAN8PwgTcKq4Fy8Fc8MyKRmwxtvft"
+          class="team"
+        >
+          <img src="images/williams.jfif" alt="Williams" />
+          <p>Williams</p>
+        </a>
+        <a href="https://www.astonmartinf1.com/en-GB" class="team">
+          <img src="images/astonmartin.jpg" alt="Aston Martin" />
+          <p>Aston Martin</p>
+        </a>
+        <a href="https://www.haasf1team.com/" class="team">
+          <img src="images/haas.jfif" alt="Haas" />
+          <p>Haas</p>
+        </a>
+        <a href="https://www.visacashapprb.com/int-en" class="team">
+          <img src="images/racingbulls.jpg" alt="Racing Bulls" />
+          <p>Racing Bulls</p>
+        </a>
+        <a href="https://www.alpinef1.com/" class="team">
+          <img src="images/alpine.jfif" alt="Alpine" />
+          <p>Alpine</p>
+        </a>
+        <a href="https://www.sauber-group.com/" class="team">
+          <img src="images/kicksauber.jfif" alt="Kick Sauber" />
+          <p>Kick Sauber</p>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <h1>Formula 1</h1>
+        <p>
+          The pinnacle of motorsport, featuring the fastest cars and elite
+          drivers.
+        </p>
       </div>
 
-      <div class="slide s2">
-        <img src="images/6fb63c20-54f5-11f0-a063-0547e47ae66c.jpg" alt="Norris Austria win"/>
-        <div class="caption"><a href="https://www.bbc.com/sport/formula1/articles/c9qx0eyjqxpo" target="_blank">Norris fights off Piastri for Austria win</a></div>
+      <div class="footer-center">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="races.html">Races</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+        </ul>
       </div>
 
-      <div class="slide s3">
-        <img src="images/racefansdotnet-7440480_HiRes.jpg" alt="Silverstone preview"/>
-        <div class="caption"><a href="https://www.espn.com/f1/story/_/id/45642234/2025-british-grand-prix-f1-preview-s-predictions-stats" target="_blank">What should we expect from Silverstone</a></div>
+      <div class="footer-right">
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+          Back to Top
+        </button>
       </div>
-    </div>
-
-    <!-- Arrows -->
-    <div class="nav">
-      <label for="slide3" class="prev">&#10094;</label>
-      <label for="slide2" class="next">&#10095;</label>
-
-      <label for="slide1" class="prev second">&#10094;</label>
-      <label for="slide3" class="next second">&#10095;</label>
-
-      <label for="slide2" class="prev third">&#10094;</label>
-      <label for="slide1" class="next third">&#10095;</label>
-    </div>
-  </div>
-
-</section>
-  
-
-<section class="teams_drivers_section">
-
-  <div class="main-container">
-    <a href="https://www.redbullracing.com/int-en" class="team">
-      <img src="images/redbull.jfif" alt="Red Bull">
-      <p>Red Bull</p>
-    </a>
-    <a href="https://www.ferrari.com/en-EN/formula1" class="team">
-      <img src="images/ferari.webp" alt="Scuderia Ferrari">
-      <p>Scuderia Ferrari</p>
-    </a>
-    <a href="https://www.mercedesamgf1.com/" class="team">
-      <img src="images/mercedes.webp" alt="Mercedes-AMG Petronas">
-      <p>Mercedes-AMG Petronas</p>
-    </a>
-    <a href="https://www.mclaren.com/racing/formula-1/" class="team">
-      <img src="images/mclaren.avif" alt="McLaren">
-      <p>McLaren</p>
-    </a>
-    <a href="https://www.williamsf1.com/?srsltid=AfmBOoqhIOpxDFFlFgSQl62brueWAN8PwgTcKq4Fy8Fc8MyKRmwxtvft" class="team">
-      <img src="images/williams.jfif" alt="Williams">
-      <p>Williams</p>
-    </a>
-    <a href="https://www.astonmartinf1.com/en-GB" class="team">
-      <img src="images/astonmartin.jpg" alt="Aston Martin">
-      <p>Aston Martin</p>
-    </a>
-    <a href="https://www.haasf1team.com/" class="team">
-      <img src="images/haas.jfif" alt="Haas">
-      <p>Haas</p>
-    </a>
-    <a href="https://www.visacashapprb.com/int-en" class="team">
-      <img src="images/racingbulls.jpg" alt="Racing Bulls">
-      <p>Racing Bulls</p>
-    </a>
-    <a href="https://www.alpinef1.com/" class="team">
-      <img src="images/alpine.jfif" alt="Alpine">
-      <p>Alpine</p>
-    </a>
-    <a href="https://www.sauber-group.com/" class="team">
-      <img src="images/kicksauber.jfif" alt="Kick Sauber">
-      <p>Kick Sauber</p>
-    </a>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="footer-left">
-    <h1>Formula 1</h1>
-    <p>The pinnacle of motorsport, featuring the fastest cars and elite drivers.</p>
-  </div>
-
-  <div class="footer-center">
-    <ul class="footer-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Races</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Sign In</a></li>
-    </ul>
-  </div>
-
-  <div class="footer-right">
-    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to Top</button>
-  </div>
-</footer>
-</body>
-
+    </footer>
+    <script src="js/scrypt.js"></script>
+  </body>
 </html>

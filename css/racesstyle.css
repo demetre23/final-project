@@ -1,3 +1,6 @@
+body {
+  padding-top: 100px;
+}
 .logo_img {
   height: 50px;
   width: 50px;
@@ -11,7 +14,17 @@
   background-color: red;
   display: flex;
   align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* makes sure it stays above other content */
+  transition: box-shadow 0.3s ease;
+}
+
+.header_nav.scrolled {
+  background-color: rgba(255, 0, 0, 0.85);
 }
 .nav_ul {
   display: flex;
@@ -43,89 +56,73 @@
   text-decoration: underline;
 }
 
-.hero {
-  position: relative;
-  background-image: url("https://images.unsplash.com/photo-1593698057605-19f581207d2f?auto=format&fit=crop&w=1950&q=80");
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/*main section*/
+
+.container {
+  width: 80vw;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 16px;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.hero-text {
+.race-card {
+  background: #1a1a1a;
+  border-radius: 20px;
+  padding: 12px;
   color: white;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
-.hero-text h1 {
-  font-size: 3em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.hero-text p {
-  font-size: 1.2em;
-  font-style: italic;
-}
-
-.about-content {
-  max-width: 1300px;
-  margin: 50px auto;
-  padding: 30px;
-  border-radius: 10px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  font-family: "Rajdhani", sans-serif;
+  flex-direction: column;
+  height: 150px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
 }
 
-/* Photos */
-.photo {
-  flex: 1 1 300px;
-  max-width: 300px;
+.race-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+.race-card:hover .headline {
+  text-decoration: underline;
 }
 
-.photo img {
-  width: 300px;
-  height: 400px;
-  object-fit: contain;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-}
-
-/* Text */
-.text-content {
-  flex: 2 1 500px;
-  min-width: 280px;
-}
-
-.text-content h2 {
-  margin-top: 30px;
-  color: #c90000;
+.round {
+  font-size: 0.7rem;
   font-weight: 600;
-  font-size: 1.8em;
+  color: #666;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.text-content p {
-  margin: 15px 0;
-  line-height: 1.6;
-  font-size: 1.1em;
+.headline {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  line-height: 1.5;
 }
+
+.positions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.position {
+  flex: 1;
+  background: #eee;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin: 0 4px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #444;
+  white-space: nowrap;
+}
+
+/*footer*/
 
 .footer {
   background-color: #111;
@@ -186,17 +183,4 @@
 
 .footer-right button:hover {
   background-color: #b80000;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .about-content {
-    flex-direction: column;
-    padding: 20px;
-  }
-  .photo,
-  .text-content {
-    max-width: 100%;
-    flex: unset;
-  }
 }
