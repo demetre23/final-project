@@ -7,8 +7,8 @@
     <link rel="icon" href="images/F1-Logo.jpg">
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.html">
     <link rel="stylesheet" href="css/racesstyle.css">
+    <link rel="stylesheet" href="index.html">
     <link rel="stylesheet" href="aboutus.html">
     <link rel="stylesheet" href="signin.html">
 </head>
@@ -16,6 +16,11 @@
     <header>
         <nav class="header_nav">
             <a href="index.html"><img class="logo_img" src="images/F1-Logo.jpg" alt=""></a>
+            <div id="burger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
             <ul class="nav_ul">
                 <li class="nav_li"><a href="index.html">Home</a></li>
                 <li class="nav_li"><a href="races.html">Races</a></li>
@@ -229,9 +234,9 @@
     </div>
   
     <div class="footer-right">
-      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to Top</button>
+      <button id="backToTopBtn">Back to Top</button>
     </div>
   </footer>
-  <script src="js/scrypt.js"></script>
+  <script src="js/races.js"></script>
 </body>
 </html>
