@@ -11,7 +11,7 @@
   background-color: red;
   display: flex;
   align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .nav_ul {
   display: flex;
@@ -201,7 +201,6 @@
   }
 }
 
-
 /* Burger menu button */
 #burger {
   display: none;
@@ -247,7 +246,7 @@
     transition: max-height 0.3s ease;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     z-index: 1001;
   }
 
@@ -309,4 +308,3 @@
     font-size: 16px;
   }
 }
-

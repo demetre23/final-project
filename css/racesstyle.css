@@ -92,7 +92,7 @@ body {
   color: #666;
   margin-bottom: 5px;
   text-transform: uppercase;
-  letter-spacing: 0.05em; 
+  letter-spacing: 0.05em;
 }
 
 .headline {
@@ -183,8 +183,6 @@ body {
 .footer-right button:hover {
   background-color: #b80000;
 }
-
-
 
 /* Burger menu button */
 #burger {
@@ -295,4 +293,3 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-

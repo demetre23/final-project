@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Back to top 
+// Back to top
 document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById("backToTopBtn");
   btn.addEventListener("click", () => {
