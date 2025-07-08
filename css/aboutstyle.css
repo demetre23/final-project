@@ -16,7 +16,7 @@
 .nav_ul {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: 700px;
   margin-left: 50px;
 }
 .nav_li a {
@@ -31,7 +31,7 @@
   display: flex;
   width: 100px;
   height: 30px;
-  margin-left: 700px;
+  margin-left: 500px;
   font-size: 25px;
   color: black;
   background-color: white;
@@ -188,18 +188,6 @@
   background-color: #b80000;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .about-content {
-    flex-direction: column;
-    padding: 20px;
-  }
-  .photo,
-  .text-content {
-    max-width: 100%;
-    flex: unset;
-  }
-}
 
 /* Burger menu button */
 #burger {
@@ -231,8 +219,17 @@
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Responsive nav styles for tablets and smaller */
-@media (max-width: 1024px) {
+/* Responsive */
+@media (max-width: 1200px) {
+  .about-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .photo,
+  .text-content {
+    max-width: 100%;
+    flex: unset;
+  }
   .nav_ul {
     display: flex;
     flex-direction: column;
@@ -251,7 +248,7 @@
   }
 
   .nav_ul.active {
-    max-height: 400px; /* enough height for menu items */
+    max-height: 400px; 
     padding: 10px 0;
   }
 

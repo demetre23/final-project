@@ -31,13 +31,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Burger menu toggle
+//burger bar
 document.addEventListener("DOMContentLoaded", () => {
   const burger = document.getElementById("burger");
-  const navUl = document.querySelector(".nav_ul");
+  const navMenu = document.querySelector(".nav_ul");
 
   burger.addEventListener("click", () => {
-    navUl.classList.toggle("active");
     burger.classList.toggle("active");
+    navMenu.classList.toggle("active");
   });
 });

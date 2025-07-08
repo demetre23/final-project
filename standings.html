@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standings - Formula 1</title>
+    <link rel="icon" href="images/F1-Logo.jpg" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="races.html" />
+    <link rel="stylesheet" href="aboutus.html" />
+    <link rel="stylesheet" href="signin.html">
+    <link rel="stylesheet" href="css/standingsstyle.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="header_nav">
+            <a href="index.html"><img class="logo_img" src="images/F1-Logo.jpg" alt=""></a>
+            <div id="burger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <ul class="nav_ul">
+                <li class="nav_li"><a href="index.html">Home</a></li>
+                <li class="nav_li"><a href="races.html">Races</a></li>
+                <li class="nav_li"><a href="aboutus.html">About Us</a></li>
+                <li class="nav_li"><a href="standings.html">Standings</a></li>
+              </ul>
+            <a class="sign_in" href="signin.html">Sign In</a>
+        </nav>
+    </header>
+
+    
+    <section class="standings-section">
+        <h1>F1 Driver Standings</h1>
+        <div id="drivers-container">
+          <div class="table-header">
+            <p>Position</p>
+            <p>Name</p>
+            <p>Number</p>
+            <p>Points</p>
+          </div>
+          <div id="drivers"></div>
+        </div>
+      </section>
+      
+    <footer class="footer">
+        <div class="footer-left">
+          <h1>Formula 1</h1>
+          <p>The pinnacle of motorsport, featuring the fastest cars and elite drivers.</p>
+        </div>
+      
+        <div class="footer-center">
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="races.html">Races</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+          </ul>
+        </div>
+      
+        <div class="footer-right">
+          <button id="backToTopBtn">Back to Top</button>
+        </div>
+      </footer>
+
+
+    <script src="js/standings.js"></script>
+</body>
+</html>

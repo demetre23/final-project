@@ -3,6 +3,7 @@ body {
   padding-top: 100px;
 }
 
+/* header styles ------------------------------------*/
 .logo_img {
   height: 50px;
   width: 50px;
@@ -30,9 +31,10 @@ body {
 }
 
 .nav_ul {
+  background-color: red;
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: 700px;
   margin-left: 50px;
 }
 .nav_li a {
@@ -47,7 +49,7 @@ body {
   display: flex;
   width: 100px;
   height: 30px;
-  margin-left: 700px;
+  margin-left: 500px;
   font-size: 25px;
   color: black;
   background-color: white;
@@ -58,10 +60,12 @@ body {
 .sign_in:hover {
   text-decoration: underline;
 }
+/*  ----------------------------------------------------------*/
 
+
+/* news -----------------------------------------*/
 /* Slider */
 .slider {
-  height: 800px;
   position: relative;
   height: 500px;
   overflow: hidden;
@@ -89,9 +93,9 @@ body {
 }
 
 .slide img {
-  max-height: 100%;
-  max-width: auto;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .caption {
@@ -170,42 +174,9 @@ body {
 #slide3:checked ~ .nav label:nth-child(6) {
   display: block;
 }
+/* ------------------------------------------------------ */
 
-@media (max-width: 768px) {
-  /* Hide radio inputs (dots) */
-  input[type="radio"] {
-    display: none;
-  }
-
-  /* Keep .nav (arrows) visible */
-  .nav label {
-    display: block !important; /* force show arrows */
-    font-size: 30px;
-    padding: 5px 10px;
-  }
-
-  /* Adjust slider height and caption size as you want */
-  .slider {
-    height: 300px;
-    overflow: hidden;
-  }
-  .caption {
-    font-size: 16px;
-    padding: 10px;
-    width: 90%;
-  }
-
-  .slides {
-    display: block;
-  }
-
-  .slide {
-    width: 100% !important;
-    display: block !important;
-    position: relative;
-  }
-}
-
+/* teams ---------------------------------------------------- */
 .teams_drivers_section {
   padding-top: 25px;
   background-color: black;
@@ -246,7 +217,9 @@ body {
   font-size: 14px;
   font-weight: bold;
 }
+/* ------------------------------------------- */
 
+/* footer -----------------------------------*/
 .footer {
   background-color: #111;
   color: white;
@@ -308,8 +281,9 @@ body {
 .footer-right button:hover {
   background-color: #b30000;
 }
+/* =---------------------------------- */
 
-/*cookies*/
+/*cookies --------------------------------*/
 #cookie-notice {
   position: fixed;
   bottom: 20px;
@@ -340,15 +314,7 @@ body {
 #cookie-notice button:hover {
   background-color: #b80000;
 }
-
-/* Hide burger on desktop, show on tablets and below */
-/* Nav bar - Desktop */
-.nav_ul {
-  display: flex;
-  justify-content: space-between;
-  width: 500px;
-  margin-left: 50px;
-}
+/* ------------------------------------------- */
 
 /* Burger button hidden on desktop */
 #burger {
@@ -358,6 +324,7 @@ body {
   width: 30px;
   height: 25px;
   position: relative;
+  z-index: 1100;
 }
 
 #burger div {
@@ -368,29 +335,39 @@ body {
   transition: 0.3s;
 }
 
-@media (max-width: 1024px) {
+#burger.active div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#burger.active div:nth-child(2) {
+  opacity: 0;
+}
+#burger.active div:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+@media (max-width: 1200px) {
   .nav_ul {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 100px;
     left: 0;
-    background-color: white;
     width: 100%;
-    padding: 0;
+    background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    z-index: 1001;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1001;
   }
 
   .nav_ul.active {
-    max-height: 300px;
+    max-height: 400px;
     padding: 10px 0;
   }
+
   .nav_li {
     padding: 15px 20px;
     border-top: 1px solid #ddd;
@@ -407,26 +384,16 @@ body {
   .nav_li a:hover {
     text-decoration: underline;
   }
+
   #burger {
     display: block;
   }
+
   .sign_in {
     margin-left: auto;
+    margin-right: 20px;
   }
 }
-#burger.active div:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-#burger.active div:nth-child(2) {
-  opacity: 0;
-}
-
-#burger.active div:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
-}
-
-/* Smaller font sizes on smaller screens */
 @media (max-width: 768px) {
   .nav_li a {
     font-size: 20px;

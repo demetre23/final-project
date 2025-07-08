@@ -40,3 +40,16 @@ form.addEventListener("submit", (e) => {
     window.location.href = "index.html";
   }, 800);
 });
+
+
+//burger bar
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.getElementById("burger");
+  const navMenu = document.querySelector(".nav_ul");
+
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+});
+
