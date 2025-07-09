@@ -4,8 +4,7 @@ const password = document.getElementById("signinPassword");
 const toggle = document.getElementById("togglePassword");
 const error = document.getElementById("signinError");
 
-const emailOrPhoneRegex =
-  /^((\+?\d{9,15})|([a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}))$/;
+const emailOrPhoneRegex = /^(5\d{8}|[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,})$/;
 
 toggle.addEventListener("click", () => {
   const type =
@@ -35,12 +34,10 @@ form.addEventListener("submit", (e) => {
   }
 
   error.textContent = "Logged in successfully!";
-  // window.location.href = "index.html";
   setTimeout(() => {
     window.location.href = "index.html";
   }, 800);
 });
-
 
 //burger bar
 document.addEventListener("DOMContentLoaded", () => {
@@ -52,4 +49,3 @@ document.addEventListener("DOMContentLoaded", () => {
     navMenu.classList.toggle("active");
   });
 });
-
